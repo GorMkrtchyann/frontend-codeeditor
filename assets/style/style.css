@@ -1,0 +1,168 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: -webkit-gradient(linear, left top, left bottom, from(#8438ff), color-stop(#7a41ff), to(#8438ff));
+  background: linear-gradient(#8438ff, #7a41ff, #8438ff);
+  border-radius: 6px;
+  height: 100px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(#7a41ff), to(#8438ff));
+  background: linear-gradient(#7a41ff, #8438ff);
+}
+
+.backvideo {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  position: absolute;
+  z-index: -5;
+}
+
+.backvideo video {
+  width: 120%;
+}
+
+.body {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.header {
+  margin-top: 10px;
+  margin-left: 30px;
+}
+
+.header button {
+  margin-right: -4px;
+  background: #fff;
+  border: none;
+  -webkit-transform: skewX(-30deg);
+          transform: skewX(-30deg);
+  cursor: pointer;
+  height: 50px;
+}
+
+.header button p {
+  -webkit-transform: skewX(30deg);
+          transform: skewX(30deg);
+  font-size: 20px;
+  margin-top: 10px;
+  padding: 0 15px;
+}
+
+.header button p i {
+  font-size: 20px;
+}
+
+.header button:hover {
+  background: #4e00ca;
+}
+
+.header button:hover p, .header button:hover i {
+  color: #fff;
+}
+
+.editor {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.editor .codes {
+  width: 47%;
+  margin-top: 10px;
+}
+
+.editor .codes .html-code, .editor .codes .css-code, .editor .codes .js-code {
+  width: 100%;
+  height: 29vh;
+  margin-top: 10px;
+  background: rgba(27, 27, 44, 0.62);
+  overflow: hidden;
+}
+
+.editor .codes .html-code {
+  margin-top: 0;
+}
+
+.editor .codes p {
+  font-family: Arial;
+  font-weight: 600;
+  background: #fff;
+  width: 100px;
+  padding: 3px 10px;
+  border-radius: 0 0 250px 0;
+  margin-top: 0;
+}
+
+.editor .preview {
+  width: 50%;
+  height: 89vh;
+  margin-top: 10px;
+}
+
+.editor .preview .preview-window {
+  width: 100%;
+  height: 89vh;
+  border: none;
+  background: #fff;
+}
+
+.rot-active {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.rot-active .codes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.rot-active .codes .html-code, .rot-active .codes .css-code, .rot-active .codes .js-code {
+  width: 32%;
+  height: 30vh;
+  background: rgba(27, 27, 44, 0.62);
+  overflow: hidden;
+}
+
+.rot-active .codes .html-code {
+  margin-top: 10px;
+}
+
+.rot-active .preview {
+  width: 99%;
+  height: 58vh;
+  margin: 10px auto;
+}
+
+.rot-active .preview .preview-window {
+  width: 100%;
+  height: 58vh;
+  border: none;
+  background: #fff;
+}
+/*# sourceMappingURL=style.css.map */
