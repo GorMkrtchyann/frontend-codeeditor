@@ -51,7 +51,7 @@ body {
   -webkit-transform: skewX(-30deg);
           transform: skewX(-30deg);
   cursor: pointer;
-  height: 50px;
+  height: 5vh;
 }
 
 .header button p {
